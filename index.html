@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Bloxified Scripts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', 'Rajdhani', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle, #2f004f, #0e001c);
+      min-height: 100vh;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .top-banner {
+      width: 100%;
+      max-width: 950px;
+      margin-bottom: 25px;
+      padding: 15px 20px;
+      background: rgba(26, 0, 44, 0.8);
+      border: 1px solid #610080;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 12px #7600ff55;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      margin-right: 12px;
+      border: 2px solid #8f00ff;
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .username {
+      font-weight: 600;
+      font-size: 1.1em;
+      color: #fff;
+    }
+
+    .user-label {
+      font-size: 0.9em;
+      color: #bbbbbb;
+    }
+
+    .right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .stat {
+      font-size: 0.95em;
+      color: #ccc;
+      display: flex;
+      align-items: center;
+    }
+
+    .stat .icon {
+      margin-right: 6px;
+      color: #ff9fff;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+      width: 100%;
+      max-width: 540px;
+    }
+
+    .notice {
+      background-color: #1b001e;
+      border: 1px solid #9400d3;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 16px #9400d3;
+      text-align: left;
+    }
+
+    .notice h2 {
+      font-size: 1.25em;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .notice p {
+      font-size: 0.97em;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 25px;
+      text-shadow: 0 0 20px #c200ff;
+      font-weight: 600;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.1em;
+      background: linear-gradient(90deg, #c200ff, #7600ff);
+      border: none;
+      color: white;
+      border-radius: 12px;
+      cursor: not-allowed;
+      box-shadow: 0 0 20px #c200ff;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+    }
+
+    .btn.active {
+      cursor: pointer;
+    }
+
+    .countdown {
+      margin-top: 15px;
+      font-size: 0.95em;
+      color: #cccccc;
+    }
+
+    .scripts-section {
+      margin-top: 50px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .scripts-section h2 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .slot {
+      background-color: #170022;
+      border: 1px solid #5a007d;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      color: #dcdcdc;
+      box-shadow: 0 0 10px #50007a66;
+    }
+
+    .slot pre {
+      background: #100017;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.9em;
+      color: #aaffff;
+    }
+
+    .slot .description {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #bbbbbb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 480px) {
+      .top-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .btn {
+        font-size: 1em;
+        padding: 13px;
+      }
+
+      .countdown {
+        font-size: 0.9em;
+      }
+
+      .notice h2 {
+        font-size: 1.1em;
+      }
+
+      .notice p {
+        font-size: 0.9em;
+      }
+
+      .scripts-section h2 {
+        font-size: 1.3em;
+      }
+
+      .slot pre {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-banner">
+    <div class="left">
+      <a href="https://www.roblox.com/users/5240193541/profile" target="_blank" style="text-decoration: none; color: inherit;">
+        <img class="avatar" src="https://www.roblox.com/headshot-thumbnail/image?userId=5240193541&width=420&height=420&format=png" alt="Bloxified Avatar">
+        <div class="user-info">
+          <div class="username">Bloxified</div>
+          <div class="user-label">Roblox Scripter</div>
+        </div>
+      </a>
+    </div>
+    <div class="right">
+      <div class="stat"><span class="icon">👁</span> <span id="viewCount">0</span></div>
+      <div class="stat"><span class="icon">❤️</span> <span id="likeCount">0</span></div>
+      <a href="https://www.roblox.com/users/5240193541/profile" target="_blank" class="stat"><span class="icon">📧</span></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="notice">
+      <h2>Executor Compatibility Notice</h2>
+      <p>
+        This script is not fully compatible with Delta or other restricted-level executors. Users may experience injection failures, missing APIs, or unstable behavior.<br><br>
+        For full functionality and performance, we strongly recommend using <strong>KRNL</strong>, which offers:<br><br>
+        - Support for critical APIs such as <code>getgenv</code>, <code>getconnections</code>, <code>debug</code>, and <code>getnilinstances</code><br>
+        - Fast injection time and reduced crash rate<br>
+        - Enhanced memory handling and script stability<br>
+        - <strong>Built-in anti-scam protection</strong> to reduce risk from malicious scripts
+      </p>
+    </div>
+
+    <h1>Welcome to Bloxified Scripts</h1>
+    <button id="downloadBtn" class="btn" disabled>Download KRNL (Wait 30s)</button>
+    <div class="countdown" id="countdown">Redirect available in 30 seconds</div>
+  </div>
+
+  <div class="scripts-section">
+    <h2>Troll Scripts</h2>
+
+    <div class="slot">
+      <pre>-- Paste your first troll script here</pre>
+      <div class="description">Description or notes about how this script works, what it targets, and any tips.</div>
+    </div>
+
+    <div class="slot">
+      <pre>-- Paste your second troll script here</pre>
+      <div class="description">You can explain what this script does, the trolling method, or who it works best on.</div>
+    </div>
+
+    <div class="slot">
+      <pre>-- Paste your third troll script here</pre>
+      <div class="description">Add any updates or compatibility notes here.</div>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById("downloadBtn");
+    const countdownText = document.getElementById("countdown");
+    const redirectURL = "https://krnl.place";
+
+    let countdown = 30;
+
+    const timer = setInterval(() => {
+      countdown--;
+      countdownText.textContent = `Redirect available in ${countdown} seconds`;
+      btn.textContent = `Download KRNL (Wait ${countdown}s)`;
+
+      if (countdown <= 0) {
+        clearInterval(timer);
+        btn.disabled = false;
+        btn.classList.add("active");
+        btn.textContent = "Download KRNL";
+        btn.style.cursor = "pointer";
+        countdownText.textContent = "Click the button to download.";
+      }
+    }, 1000);
+
+    btn.addEventListener("click", () => {
+      if (!btn.disabled) {
+        alert("Redirecting to: " + redirectURL);
+        // window.location.href = redirectURL;
+      }
+    });
+
+    // Random viewer and like counts
+    document.getElementById("viewCount").textContent = 
+      (Math.floor(Math.random() * 100000) + 300000).toLocaleString() + " views";
+
+    document.getElementById("likeCount").textContent = 
+      (Math.floor(Math.random() * 50000) + 100000).toLocaleString() + " likes";
+  </script>
+</body>
+</html>
